@@ -32,7 +32,7 @@ contract OrdinaryEveryday is ERC721A, Ownable, ReentrancyGuard {
     mapping (address => bool) public freeMinted;
     mapping (address => uint256) public userMinted;
 
-    constructor (bytes32 _merkleRoot) ERC721A("Ordinary Everyday", "ODE") {
+    constructor (bytes32 _merkleRoot) ERC721A("Ordinary Everyday", "ODED") {
         merkleRoot = _merkleRoot;
         _safeMint(msg.sender, 1);
     }
