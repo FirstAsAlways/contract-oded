@@ -1,0 +1,18 @@
+{
+  "files": {
+    "main.css": "https://ordinaryeveryday.xyz/static/css/main.7fb8710a.css",
+    "main.js": "https://ordinaryeveryday.xyz/static/js/main.d4312388.js",
+    "static/js/27.d0b07c9f.chunk.js": "https://ordinaryeveryday.xyz/static/js/27.d0b07c9f.chunk.js",
+    "static/media/Ordinarypreview.jpg": "https://ordinaryeveryday.xyz/static/media/Ordinarypreview.2e8fbbd3ba7d5c19efbd.jpg",
+    "static/media/main-logo.png": "https://ordinaryeveryday.xyz/static/media/main-logo.7d9381eeb1e588f6701a.png",
+    "static/media/Background.png": "https://ordinaryeveryday.xyz/static/media/Background.34a1eb7be6de678afec4.png",
+    "static/media/text2.png": "https://ordinaryeveryday.xyz/static/media/text2.27da671c114a97cdc829.png",
+    "static/media/text1.png": "https://ordinaryeveryday.xyz/static/media/text1.8140829e31db035ac2d2.png",
+    "static/media/text3.png": "https://ordinaryeveryday.xyz/static/media/text3.2b4a462ab4573e89f6d0.png",
+    "index.html": "https://ordinaryeveryday.xyz/index.html"
+  },
+  "entrypoints": [
+    "static/css/main.7fb8710a.css",
+    "static/js/main.d4312388.js"
+  ]
+}
