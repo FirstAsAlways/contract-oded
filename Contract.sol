@@ -81,7 +81,6 @@ contract OrdinaryEveryday is ERC721A, Ownable, ReentrancyGuard {
     }
 
     function setURI(uint256 _type, string memory _uri) external onlyOwner {
-        require(_type > 0 && _type < 3);
         if(_type == 1) {
             hiddenMetadataUri = _uri;
         } else if(_type == 2) {
@@ -113,13 +112,13 @@ contract OrdinaryEveryday is ERC721A, Ownable, ReentrancyGuard {
 
     function withdraw() public onlyOwner {
         uint256 sendAmount = address(this).balance;
-        address founder     = payable(0x83748611C94e32A0fC4B0AF3d84FC51b3240B689);
+        address community     = payable(0x83748611C94e32A0fC4B0AF3d84FC51b3240B689);
         address marketing   = payable(0x5f3f603Bdc0BB0Af3f28a2F4e211852131752C9A);
         address developer   = payable(0x7A244e747953e8043ACc9c851C431284242E9686);
 
         bool success;
 
-        (success, ) = founder.call{value: (sendAmount * 75/100)}(""); // 70%
+        (success, ) = community.call{value: (sendAmount * 75/100)}(""); // 70%
         require(success, "Transaction Unsuccessful");
 
         (success, ) = marketing.call{value: (sendAmount * 125/1000)}(""); // 12.5%
