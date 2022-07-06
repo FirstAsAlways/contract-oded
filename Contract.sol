@@ -81,7 +81,7 @@ contract OrdinaryEveryday is ERC721A, Ownable, ReentrancyGuard {
     }
 
     function setURI(uint256 _type, string memory _uri) external onlyOwner {
-        require(_type > 0 || _type < 3);
+        require(_type > 0 && _type < 3);
         if(_type == 1) {
             hiddenMetadataUri = _uri;
         } else if(_type == 2) {
